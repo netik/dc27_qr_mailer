@@ -14,11 +14,16 @@ using the shipstation mobile app, at a table at DEF CON.
 
 ## To use:
 
-cp keys-dist.js to keys/index.js
+```
+mkdir keys
+mkdir customers
+mkdir codes
+cp keys-dist.js keys/index.js
+```
 
-Add your sparkpost API key to that file.
+Edit keys/index.js -- add your sparkpost key.
 
-Create a directory called "customers", and place a "orders.csv" file
+Place a "orders.csv" file into `customers/`
 there. You can get a dump from shipsation by using 'export orders'
 
 Edit the files underneath `emails/ides/...` to set up the message.

@@ -1,0 +1,2 @@
+module.exports.APIKEY=' SPARKPOST API KEY GOES HERE ';
+

@@ -20,7 +20,7 @@ let transporter = nodeMailer.createTransport({
         },
     });
 
-fs.createReadStream('orders.csv')
+fs.createReadStream('customers/orders.csv')
     .pipe(csv())
     .on('data', (data) => results.push(data))
     .on('end', () => {
